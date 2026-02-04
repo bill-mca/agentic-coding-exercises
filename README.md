@@ -111,6 +111,24 @@ Set up a network of docker containers designed for cyberwar gaming. Let the agen
 4. Progress through exercises as your skills develop
 5. Document your learnings and reflect on each session
 
+## Repository Structure
+
+This repository has two main branches:
+
+- **`main`** (current branch): Student-facing materials with exercise instructions, templates, and frameworks. Solutions are NOT included—you'll create these with your AI agent.
+
+- **`solutions`**: Reference implementations and example solutions for exercises 1-3. Only consult this branch AFTER completing exercises yourself.
+
+To view reference solutions:
+```bash
+git checkout solutions
+```
+
+To return to exercises:
+```bash
+git checkout main
+```
+
 ## Contributing
 
 This is a living document. Contributions, suggestions, and additional exercises are welcome.

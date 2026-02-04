@@ -25,8 +25,8 @@ Before undertaking an agentic coding project, it's crucial to understand what th
 - Mobile applications
 - Infrastructure projects
 
-### 2. Detailed Specifications (`specifications/`)
-In-depth technical specifications for selected challenges, including:
+### 2. Example Specification (`specifications/01-calculator.md`)
+An example detailed specification showing how to document a challenge thoroughly:
 - Technical requirements
 - External dependencies
 - Data requirements
@@ -34,6 +34,8 @@ In-depth technical specifications for selected challenges, including:
 - Testing considerations
 - Deployment complexity
 - Estimated effort
+
+**Your task:** Create similar detailed specifications for 2-3 challenges of your choice. Use the example as a template.
 
 ### 3. Assessment Rubric (`rubric.md`)
 A comprehensive framework for evaluating challenge difficulty across 8 dimensions:
@@ -62,7 +64,10 @@ A comprehensive framework for evaluating challenge difficulty across 8 dimension
 
 4. **Select 3-5 challenges** spanning different complexity levels
 
-5. **Read detailed specifications** for your selected challenges in `specifications/`
+5. **Create detailed specifications** for your selected challenges
+   - Review the example in `specifications/01-calculator.md`
+   - Write similar specifications for your chosen challenges
+   - Work with AI to think through all the requirements
 
 ### Part 2: AI-Assisted Analysis (With AI Agent, 60-90 minutes)
 

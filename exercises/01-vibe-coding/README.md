@@ -53,14 +53,20 @@ This exercise introduces you to working with AI coding assistants through a seri
    - How clear did you need to be with your requirements?
    - What patterns did you notice in effective prompts?
 
-## Reference Solutions
+## Creating Your Solutions
 
-The `solutions/` directory contains reference Python implementations for some tasks. These are provided:
-- To verify your AI-generated solutions work correctly
-- As examples of clean, working code
-- To compare approaches when the AI produces something different
+Create a `solutions/` directory in your working copy to store your implementations:
 
-**Note:** Don't look at the reference solutions until you've attempted the task with your AI agent first. The learning happens in the interaction.
+```bash
+mkdir -p exercises/01-vibe-coding/solutions
+```
+
+For each task you complete:
+- Save your solution with a clear filename (e.g., `task01_file_renamer.py`)
+- Add comments explaining your approach
+- Test thoroughly before moving to the next task
+
+**Note:** Reference solutions are available in the `solutions` branch of this repository, but don't look at them until you've attempted the tasks yourself. The learning happens in the interaction with your AI agent.
 
 ## Tips for Success
 
