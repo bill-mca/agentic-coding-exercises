@@ -25,119 +25,111 @@ All five solutions solve the same problem: **Sudoku Solver**
 
 See `challenge.md` for detailed problem specification.
 
-## Your Task: Generate Multiple Solutions
+## The Solutions
 
-You'll work with your AI agent to create 3-5 different implementations of the Sudoku solver, each in a distinctly different style. The goal is to generate solutions that solve the same problem but demonstrate different coding approaches, quality levels, and trade-offs.
+### 1. Beginner Style (`solutions/beginner.py`) - ~136 lines
+**Characteristics:**
+- No functions—everything in one linear script
+- Hardcoded puzzle (assumes specific variable name)
+- Excessive comments explaining obvious things
+- Many debug print statements left in
+- Works only under very specific conditions
 
-### Suggested Solution Styles
+**What it teaches:** Why structure and modularity matter
 
-Here are some style archetypes to consider (choose 3-5):
+---
 
-**1. Beginner Style** (~100-150 lines)
-- No functions—linear script
-- Excessive comments
-- Debug print statements
-- Hardcoded values
-- Works only under specific conditions
+### 2. Intermediate Style (`solutions/intermediate.py`) - ~196 lines
+**Characteristics:**
+- Functions exist, providing some organization
+- Inconsistent naming (camelCase vs snake_case)
+- Unused imports
+- Code duplication across validation functions
+- Commented-out code "for later"
+- Mix of inline code and functions in main()
 
-**2. Intermediate Style** (~150-200 lines)
-- Some functions but inconsistent organization
-- Mixed naming conventions
-- Code duplication
-- Commented-out code
-- Works but has technical debt
+**What it teaches:** How inconsistency and technical debt accumulate
 
-**3. Clean/Professional Style** (~80-120 lines)
-- Well-organized functions
-- Clear naming
-- Appropriate comments
-- Error handling
-- Balanced complexity
+---
 
-**4. Genius/Concise Style** (~20-50 lines)
-- Hyper-optimized
-- Minimal variable names
-- Dense logic
-- No documentation
-- Clever but cryptic
+### 3. Genius Style (`solutions/genius.py`) - ~20 lines
+**Characteristics:**
+- Hyper-concise implementation
+- Single-letter variable names
+- No comments or documentation
+- Clever use of Python features
+- Difficult to understand without significant effort
+- Correct and efficient
 
-**5. Enterprise/Over-engineered Style** (~200-250 lines)
-- Classes and inheritance
-- Design patterns
-- Logging and config
-- Menu system or elaborate UI
-- Over-engineered for problem size
+**What it teaches:** When brevity becomes a liability
 
-**6. Eccentric Style** (~100-150 lines)
-- Unusual design choices
-- Heavy use of lambdas or recursion
-- Non-standard data structures
-- "Clever" approaches
-- Justified with questionable reasoning
+---
+
+### 4. Enterprise Style (`solutions/enterprise.py`) - ~234 lines
+**Characteristics:**
+- Extensive class hierarchy
+- Enums, dataclasses, type hints
+- Logging framework
+- Elaborate text-based menu system
+- Over-engineered for the problem size
+- Production-quality error handling
+
+**What it teaches:** When abstraction and structure become burden
+
+---
+
+### 5. Eccentric Style (`solutions/eccentric.py`) - ~140 lines
+**Characteristics:**
+- Unusual design choice: flat 1D list instead of 2D array
+- Heavy use of lambda functions
+- Functional programming style in Python
+- Clever but unnecessarily complex
+- Justified with technical reasoning that doesn't hold up
+
+**What it teaches:** When "clever" code isn't smart code
 
 ---
 
 ## Instructions
 
-### Part 1: Generate Solutions (60-90 minutes)
+### Part 1: Initial Impressions (30 minutes)
 
 1. **Read the challenge specification** (`challenge.md`) to understand the problem
 
-2. **Select 3-5 styles** from the suggested archetypes above
+2. **Examine all five solutions:**
+   - Spend 5-10 minutes with each
+   - Don't worry about understanding every detail yet
+   - Note your initial reactions
 
-3. **Generate each solution with your AI agent:**
-
-   For each style, prompt your AI specifically:
-   ```
-   "Write a Sudoku solver in Python using a [STYLE] approach. The code should:
-   - [List specific characteristics of that style]
-   - Be approximately [X] lines long
-   - Demonstrate [specific anti-patterns or patterns]
-
-   Here's the problem specification: [paste challenge.md]"
-   ```
-
-4. **Save each solution** in a `solutions/` directory with clear filenames:
-   - `beginner.py`
-   - `intermediate.py`
-   - `clean.py`
-   - `genius.py`
-   - `enterprise.py`
-   - etc.
-
-5. **Test each solution:**
-   - Run them with the test cases from `challenge.md`
-   - Verify they produce correct output
-   - Note which ones actually work
-
-### Part 2: Initial Comparison (30 minutes)
-
-6. **Review all your generated solutions:**
-   - Read through each one
-   - Note your initial impressions
+3. **Record first impressions:**
    - Which looks most appealing?
-   - Which looks most problematic?
+   - Which looks most intimidating?
+   - Which would you want to work with?
+   - Which would you avoid?
 
-7. **Create a comparison table:**
-   | Solution | Lines | Works? | First Impression |
-   |----------|-------|--------|------------------|
-   | Beginner | 136 | Yes | Too many comments |
-   | ... | ... | ... | ... |
+### Part 2: Deep Analysis with AI (90-120 minutes)
 
-### Part 3: Deep Analysis with AI (90-120 minutes)
+4. **Pick two solutions to analyze first** (suggest: Intermediate and Enterprise)
 
-8. **Analyze each solution systematically:**
+5. **For each solution, work with your AI agent:**
    ```
-   "Let's analyze this [Style] Sudoku solver. Evaluate it across these
-   dimensions: readability, maintainability, performance, correctness,
-   extensibility, and testability. What are its strengths and weaknesses?"
+   "I'm analyzing the [Style] Sudoku solver. Let's evaluate it across
+   these dimensions: readability, maintainability, performance,
+   correctness, extensibility, and testability. What do you notice?"
    ```
 
-9. **Drill into specifics:**
+6. **Drill into specifics:**
    - Ask the AI to identify code smells
    - Discuss trade-offs in design decisions
-   - Compare your assessment with AI's assessment
+   - Compare with your own assessment
    - Challenge the AI's conclusions
+
+7. **Run the solutions:**
+   - Do they produce correct output?
+   - How do they handle errors?
+   - What happens with edge cases?
+
+8. **Repeat for the remaining three solutions**
 
 ### Part 3: Comparative Analysis (45-60 minutes)
 
@@ -232,22 +224,6 @@ Students typically discover:
 - **Total exercise:** 3-4.5 hours
 - Can be split across multiple sessions
 - Part 2 is the most time-intensive
-
-## Reference Solutions
-
-After completing your own implementations and analysis, you can compare with reference solutions available in the `solutions` branch of this repository:
-
-```bash
-git checkout solutions
-```
-
-The solutions branch contains 5 example implementations demonstrating different coding styles. Use these to:
-- Compare your AI-generated solutions with reference examples
-- See how different prompts led to different implementations
-- Validate your analysis and insights
-- Explore additional code patterns
-
-**Important:** Only look at reference solutions AFTER you've completed your own analysis. The learning comes from generating and evaluating solutions yourself.
 
 ## Extension Activities
 
