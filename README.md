@@ -6,6 +6,8 @@ A guide to effective software development using AI agents as collaborative partn
 
 Agentic coding is a development approach where AI assistants work alongside human developers to write, review, and maintain code. This guide provides principles, skills, and exercises for learning to code effectively with AI agents.
 
+**Teaching Context:** This course uses Python as the primary language for all exercises and examples. Python serves as a practical tool for teaching agentic coding concepts, allowing students to focus on the interaction patterns and collaboration strategies with AI agents rather than language-specific complexities.
+
 ## Core Principles
 
 ### 1. Human-Led Design and Critique
