@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """
-Sudoku Solver - Enterprise Developer Style
+Sudoku Solver - Solution 5
 Author: Claude (Anthropic) for teaching purposes
 Note: This code is intentionally over-engineered for educational comparison.
       It may not work perfectly.
+
+Design Thesis: There's a right way to do things and a wrong way to do things.
+This is the best-practice approach to writing python code that I've brought 
+from my leading industry context.  
 """
 
 import logging

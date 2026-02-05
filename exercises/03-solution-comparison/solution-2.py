@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """
-Sudoku Solver - Eccentric Developer Style
+Sudoku Solver - Solution 2
 Author: Claude (Anthropic) for teaching purposes
-Note: This code uses an unusual flat-list representation and heavy lambda usage
-      for educational comparison. It may not work perfectly.
 
-Design Decision: Why use a 1D list? Because in memory, 2D arrays are stored
+Design Thesis: Why use a 1D list? Because in memory, 2D arrays are stored
 as 1D anyway, so this is more "honest" about the underlying representation.
 Plus, it lets us use pure functional programming with lambdas!
 """

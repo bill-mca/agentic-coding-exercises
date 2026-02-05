@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
-Sudoku Solver - Intermediate Developer Style
+Sudoku Solver - Solution 4
 Author: Claude (Anthropic) for teaching purposes
-Note: This code is intentionally written in an intermediate style with
-      various anti-patterns for educational comparison. It may not work perfectly.
+Note: This code is intentionally written for educational comparison. It may 
+not work perfectly.
+
+Design Thesis: 'Pythonic' function-based code that addresses the challenge 
+directly.
 """
 
 import sys

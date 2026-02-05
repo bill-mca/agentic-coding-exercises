@@ -76,16 +76,6 @@ Implement a Sudoku solver that takes a 9x9 grid (partially filled) and completes
    - Show grid lines separating 3x3 boxes
    - Clear distinction between given and solved numbers (optional)
 
-### Optional Enhancements
-
-- Support multiple puzzle difficulties
-- Puzzle generation (create valid Sudoku puzzles)
-- Step-by-step solution display
-- Performance measurement (time to solve)
-- Validate that solution is unique
-- GUI for interactive solving
-- Statistics (number of backtracks)
-
 ## Algorithm: Backtracking
 
 The standard approach uses recursive backtracking:
@@ -106,55 +96,6 @@ function solve(grid):
     return False (no solution from this state)
 ```
 
-## Test Cases
-
-Include at least these test cases:
-
-### Easy Puzzle
-```
-5 3 0 | 0 7 0 | 0 0 0
-6 0 0 | 1 9 5 | 0 0 0
-0 9 8 | 0 0 0 | 0 6 0
-------+-------+------
-8 0 0 | 0 6 0 | 0 0 3
-4 0 0 | 8 0 3 | 0 0 1
-7 0 0 | 0 2 0 | 0 0 6
-------+-------+------
-0 6 0 | 0 0 0 | 2 8 0
-0 0 0 | 4 1 9 | 0 0 5
-0 0 0 | 0 8 0 | 0 7 9
-```
-
-### Hard Puzzle
-```
-0 0 0 | 0 0 0 | 0 0 0
-0 0 0 | 0 0 3 | 0 8 5
-0 0 1 | 0 2 0 | 0 0 0
-------+-------+------
-0 0 0 | 5 0 7 | 0 0 0
-0 0 4 | 0 0 0 | 1 0 0
-0 9 0 | 0 0 0 | 0 0 0
-------+-------+------
-5 0 0 | 0 0 0 | 0 7 3
-0 0 2 | 0 1 0 | 0 0 0
-0 0 0 | 0 4 0 | 0 0 9
-```
-
-### Invalid Puzzle (No Solution)
-```
-5 3 0 | 0 7 0 | 0 0 0
-6 0 0 | 1 9 5 | 0 0 0
-0 9 8 | 0 0 0 | 0 6 0
-------+-------+------
-8 0 0 | 0 6 0 | 0 0 3
-4 0 0 | 8 0 3 | 0 0 1
-7 0 0 | 0 2 0 | 0 0 6
-------+-------+------
-0 6 0 | 0 0 0 | 2 8 0
-0 0 0 | 4 1 9 | 0 0 5
-5 0 0 | 0 8 0 | 0 7 9  # Duplicate 5 in first column
-```
-
 ## Expected Behavior
 
 - **Valid puzzle:** Display the solved grid
@@ -171,14 +112,3 @@ A correct implementation should:
 4. Handle edge cases gracefully
 5. Complete within reasonable time
 
-## Notes for Students
-
-This challenge is ideal for comparing different coding styles because:
-- The problem is well-defined and understandable
-- There's a clear correct/incorrect answer
-- The core algorithm is the same across implementations
-- Differences emerge in code organization, validation, display, etc.
-- It's complex enough to reach ~200 lines in verbose styles
-- It's simple enough to understand all implementations
-
-Focus on HOW each solution implements the same logic, not just WHETHER it works.

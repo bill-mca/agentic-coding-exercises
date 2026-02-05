@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-Sudoku Solver - Beginner Developer Style
+Sudoku Solver - Solution 1
 Author: Claude (Anthropic) for teaching purposes
-Note: This code is intentionally written in a beginner style with
-      anti-patterns for educational comparison. It may not work perfectly.
+Note: This code is intentionally written for educational comparison. It may not work perfectly.
+
+Design Thesis: It's important to comment your code to keep track of progress
+and help people understand it.
 """
 
 # This is my sudoku solver

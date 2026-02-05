@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
-Sudoku Solver - Genius Developer Style
+Sudoku Solver - Solution 3
 Author: Claude (Anthropic) for teaching purposes
-Note: This code is intentionally written in a hyper-optimized, cryptic style
-      for educational comparison. It may not work perfectly.
+Note: This code is intentionally written for educational comparison. 
+It may not work perfectly.
+
+Design Thesis: Sudoku is a trivial mathematical problem. Here is the optimal 
+solution.
 """
 
 def s(g,i=0):
